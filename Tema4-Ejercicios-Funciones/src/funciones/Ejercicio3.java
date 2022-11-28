@@ -11,6 +11,10 @@ public class Ejercicio3 {
 		radio=read.nextInt();
 		System.out.println("Introduce la altura del cilindro: ");
 		altura=read.nextInt();
+		System.out.println("Elige una opción: ");
+		System.out.println("a) 1 [área]");
+		System.out.println("b) 2 [vólumen]");
+		opcion=read.nextInt();
 		
 		cilindro(altura, radio, opcion);
 		
@@ -22,9 +26,11 @@ public class Ejercicio3 {
 			switch (opcion) {
 			case 1: 
 				area= (int) ((2*pi*radio)*(altura+radio));
+				System.out.println("El área del cilindro es: " + area + "m²");
 				break;
 			case 2:
 				volumen= (int) (pi*Math.pow(radio, 2)*altura);
+				System.out.println("El vólumen del cilindro es: " + volumen + "m³");
 				break;
 			
 			}
